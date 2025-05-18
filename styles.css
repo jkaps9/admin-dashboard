@@ -12,18 +12,36 @@ html {
 body {
     --main-color: #4499FF;
     --secondary-color: #e8e8e8;
+    font-family: Arial, Helvetica, sans-serif;
 
-    background-color: var(--main-color);
-    color: white;
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: auto 1fr;
 }
 
 body>* {
-    border: 2px solid red;
+    border: 1px solid red;
+    padding: 10px;
 }
+
+/* Sidebar */
 
 aside {
     grid-row: 1 / span 2;
+
+    background-color: var(--main-color);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    display: grid;
+    grid-auto-rows: max-content;
+    gap: 25px;
+
+    padding-right: 50px;
+}
+
+aside>nav>ul>li {
+    list-style-type: none;
+    padding: 10px 0px;
 }
