@@ -1,0 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    --main-color: #4499FF;
+    --secondary-color: #e8e8e8;
+
+    background-color: var(--main-color);
+    color: white;
+}
