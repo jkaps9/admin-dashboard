@@ -20,12 +20,15 @@ body {
 }
 
 /* Add borders to see grids - remove later */
-body>*,
+/* body>*,
 aside>*,
 header>*,
+header>*>*,
+header>*>*>*,
 main>*,
 main>*>*,
-main>*>*>* {
+main>*>*> */
+* {
     border: 1px solid red;
 
 }
@@ -58,9 +61,68 @@ aside>nav>ul>li {
 
 /* Header */
 header {
+    background-color: #FFFFFF;
+    color: #000000;
+
     display: grid;
     grid-template-columns: 1fr auto;
-    grid-template-rows: 1fr auto;
+    grid-template-rows: auto 1fr;
+    gap: 10px;
+}
+
+
+header>* {
+    display: grid;
+    align-items: center;
+    gap: 10px;
+}
+
+/*** Search Bar ***/
+.search-bar {
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+}
+
+input {
+    appearance: none;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--secondary-color);
+    height: 1.7rem;
+}
+
+/*** User Info ***/
+.user-info {
+    grid-template-columns: repeat(3, max-content);
+    justify-content: end;
+
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/***  User Greeting ***/
+.user-greeting {
+    grid-template-columns: repeat(2, max-content);
+}
+
+.user-greeting .user-name {
+    margin-top: 4px;
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+/*** Button Container ***/
+.button-container {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+button {
+    background-color: var(--main-color);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    padding: 6px 0;
+    min-width: 5rem;
 }
 
 /* main */
