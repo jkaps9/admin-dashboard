@@ -129,7 +129,8 @@ button {
 main {
     background-color: var(--secondary-color);
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
 }
 
 .projects {
@@ -148,5 +149,27 @@ main {
 .card {
     background-color: #FFFFFF;
     border-radius: 8px;
-    padding: 28px 12px;
+    padding: 36px 12px;
+
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    align-items: end;
+}
+
+.action-container {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    justify-content: end;
+}
+
+.announcements {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 10px;
+}
+
+.trending {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 10px;
 }
