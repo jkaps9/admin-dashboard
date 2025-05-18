@@ -15,4 +15,15 @@ body {
 
     background-color: var(--main-color);
     color: white;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+body>* {
+    border: 2px solid red;
+}
+
+aside {
+    grid-row: 1 / span 2;
 }
