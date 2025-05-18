@@ -19,8 +19,16 @@ body {
     grid-template-rows: auto 1fr;
 }
 
-body>* {
+/* Add borders to see grids - remove later */
+body>*,
+aside>*,
+header>*,
+main>* {
     border: 1px solid red;
+
+}
+
+body>* {
     padding: 10px;
 }
 
@@ -36,7 +44,7 @@ aside {
 
     display: grid;
     grid-auto-rows: max-content;
-    gap: 25px;
+    gap: 50px;
 
     padding-right: 50px;
 }
@@ -44,4 +52,21 @@ aside {
 aside>nav>ul>li {
     list-style-type: none;
     padding: 10px 0px;
+}
+
+/* Header */
+header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr auto;
+}
+
+/* main */
+main {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.projects {
+    grid-row: 1 / span 2;
 }
