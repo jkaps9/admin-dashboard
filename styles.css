@@ -40,9 +40,29 @@ aside {
     padding-right: 50px;
 }
 
+aside .logo {
+    display: grid;
+    grid-template-columns: 36px auto;
+    gap: 10px;
+    align-items: center;
+    font-size: 1rem;
+}
+
+aside>div>svg {
+    height: 36px;
+}
+
 aside>nav>ul>li {
     list-style-type: none;
-    padding: 10px 0px;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: 18px auto;
+    gap: 10px;
+}
+
+aside>nav>ul>li svg {
+    height: 18px;
 }
 
 /* Header */
