@@ -19,20 +19,6 @@ body {
     grid-template-rows: auto 1fr;
 }
 
-/* Add borders to see grids - remove later */
-/* body>*,
-aside>*,
-header>*,
-header>*>*,
-header>*>*>*,
-main>*,
-main>*>*,
-main>*>*> */
-* {
-    border: 1px solid red;
-
-}
-
 body>* {
     padding: 10px;
 }
