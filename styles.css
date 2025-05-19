@@ -129,47 +129,44 @@ button {
 main {
     background-color: var(--secondary-color);
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 10px;
+    padding-bottom: 50px;
 }
 
-.projects {
+section.projects {
     grid-row: 1 / span 2;
+}
+
+main>section {
     display: grid;
+    grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
     gap: 10px;
 }
 
-.projects .card-container {
+section.projects>.project-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 20px;
 }
 
 .card {
     background-color: #FFFFFF;
     border-radius: 8px;
-    padding: 36px 12px;
 
     display: grid;
-    grid-template-rows: auto auto 1fr;
-    align-items: end;
-}
-
-.action-container {
-    display: grid;
-    grid-template-columns: repeat(3, max-content);
-    justify-content: end;
-}
-
-.announcements {
-    display: grid;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: 1fr auto;
+    align-items: center;
     gap: 10px;
+    padding: 0 20px 20px;
 }
 
-.trending {
+.card .action-buttons {
+    justify-self: end;
     display: grid;
-    grid-template-rows: auto 1fr;
-    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
 }
