@@ -64,9 +64,12 @@ header {
     color: #000000;
 
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 5fr 3fr;
     grid-template-rows: auto 1fr;
-    gap: 10px;
+    gap: 20px;
+
+    padding-left: 24px;
+    padding-right: 48px;
 }
 
 
@@ -84,7 +87,7 @@ header>* {
 
 input {
     appearance: none;
-    border-radius: 10px;
+    border-radius: 20px;
     border: none;
     background-color: var(--secondary-color);
     height: 1.7rem;
@@ -93,6 +96,7 @@ input {
 /*** User Info ***/
 .user-info {
     grid-template-columns: repeat(3, max-content);
+    gap: 20px;
     justify-content: end;
 
     font-weight: bold;
@@ -113,15 +117,17 @@ input {
 /*** Button Container ***/
 .button-container {
     grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
 }
 
 button {
     background-color: var(--main-color);
     color: #FFFFFF;
     border: none;
-    border-radius: 10px;
-    padding: 6px 0;
+    border-radius: 20px;
+    padding: 10px 0;
     min-width: 5rem;
+    font-weight: bold;
 }
 
 /* main */
@@ -161,16 +167,18 @@ section.projects>.project-grid {
 .card {
     background-color: #FFFFFF;
     border-radius: 8px;
-    font-size: 14px;
 
-    display: grid;
-    grid-template-rows: 1fr auto;
-    align-items: center;
-    gap: 10px;
     padding: 0 20px 20px;
+    display: grid;
 }
 
 .project {
+    font-size: 14px;
+
+    grid-template-rows: 1fr auto;
+    align-items: center;
+    gap: 10px;
+
     border-left: 8px solid darkorange;
 }
 
@@ -184,4 +192,25 @@ section.projects>.project-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+}
+
+.announcements>.card {
+    padding-top: 20px;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.announcement>p {
+    padding: 2px 0;
+    font-size: 0.6rem;
+    opacity: 0.6;
+}
+
+.announcement {
+    padding: 10px 15px;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.announcement:last-child {
+    border-bottom: none;
 }
