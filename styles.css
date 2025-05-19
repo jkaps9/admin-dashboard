@@ -194,20 +194,25 @@ section.projects>.project-grid {
     gap: 20px;
 }
 
-.announcements>.card {
-    padding-top: 20px;
+.announcements {
+    padding-top: 10px;
+    padding-bottom: 5px;
     grid-template-rows: 1fr 1fr 1fr;
     align-items: center;
 }
 
 .announcement>p {
-    padding: 2px 0;
-    font-size: 0.6rem;
+    padding: 2px 10px;
+    font-size: 0.7rem;
     opacity: 0.6;
 }
 
+.announcement>h5 {
+    padding: 0px 10px;
+}
+
 .announcement {
-    padding: 10px 15px;
+    padding: 10px 0;
     border-bottom: 1px solid var(--secondary-color);
 }
 
