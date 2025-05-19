@@ -42,14 +42,10 @@ aside {
 
 aside .logo {
     display: grid;
-    grid-template-columns: 36px auto;
+    grid-template-columns: auto auto;
     gap: 10px;
     align-items: center;
     font-size: 1rem;
-}
-
-aside>div>svg {
-    height: 36px;
 }
 
 aside>nav>ul>li {
@@ -57,12 +53,9 @@ aside>nav>ul>li {
     padding: 10px;
 
     display: grid;
-    grid-template-columns: 18px auto;
-    gap: 10px;
-}
-
-aside>nav>ul>li svg {
-    height: 18px;
+    grid-template-columns: min-content min-content;
+    gap: 24px;
+    align-items: center;
 }
 
 /* Header */
@@ -135,9 +128,11 @@ button {
 main {
     background-color: var(--secondary-color);
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 10px;
+    gap: 20px;
+    padding: 24px 24px 48px 24px;
+    padding-top: 25px;
     padding-bottom: 50px;
 }
 
@@ -152,6 +147,10 @@ main>section {
     gap: 10px;
 }
 
+h2 {
+    font-size: 1.1rem;
+}
+
 section.projects>.project-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -162,12 +161,22 @@ section.projects>.project-grid {
 .card {
     background-color: #FFFFFF;
     border-radius: 8px;
+    font-size: 14px;
 
     display: grid;
     grid-template-rows: 1fr auto;
     align-items: center;
     gap: 10px;
     padding: 0 20px 20px;
+}
+
+.project {
+    border-left: 8px solid darkorange;
+}
+
+.project-content>p {
+    opacity: 0.6;
+    max-width: 40ch;
 }
 
 .card .action-buttons {
